@@ -1,11 +1,19 @@
-#!/usr/bin/python3
+!/usr/bin/python3
 """Console module"""
 import cmd
 from models.base_model import BaseModel
 from models import storage
 
 classes = {"BaseModel": BaseModel}
-
+ __classes = {
+        "BaseModel",
+        "User",
+        "State",
+        "City",
+        "Place",
+        "Amenity",
+        "Review"
+    }
 
 class HBNBCommand(cmd.Cmd):
     """HBNBCommand class"""
